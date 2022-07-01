@@ -58,7 +58,7 @@ const Home: NextPage = () => {
       {
         isGenerate && <TabBingo>
           {
-            numbers.map((n: number) => <Tile value={n} />)
+            numbers.map((n: number) => <Tile key={n} value={n} />)
           }
         </TabBingo>
       }
